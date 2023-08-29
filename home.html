@@ -43,8 +43,8 @@
     <div>
         <h5 id="C1"> </h5>
         <div class="banner">
-            <!-- <h1>Mariam Chamseddin</h1>
-        <p>text text text text text text text text text</p> -->
+            <img src="media/banner1.png" alt="banner">
+      
         </div>
 
 
@@ -56,22 +56,24 @@
 
                 <h1>About</h1>
                 <div class="grid-container-main">
-                    <div class="grid-item-main" id="about-foto"></div>
+                    <div class="grid-item-main" id="about-foto">
+                        <img src="media/me.jpg" alt="banner">
+                    </div>
 
                     <div class="grid-item-main">
-                        <h2> Title Bla Bla</h2>
-                        <p>This chapter explains ba bhis chapter explains ba blhis chapter explains ba blhis chapter
-                            explains ba blhis chapter explains <br> ba blhis chapter explains ba blhis chapter explains
-                            ba blhis chapter explains ba blhis chapter explains ba blhis chapter explains ba blhis
-                            chapter explains ba blhis chapter explains ba blhis chapter explains ba blhis chapter
-                            explains ba blhis chapter explains ba blhis chapter explains ba bllachapter explains ba bla
-                            bla</p>
+                        <h2 style="color: #4565C4;">Hello, I'm Mariam  </h2>
+                        <p>A Software Developer. With a huge passion for transforming ideas into reality using a few lines of code.
+                         I have been on an internship at Eneco, I was fascinated with the way they work there, and the company international impact. I like the idea of working at a big international company.
+                          Wich is why this page is writen in english. This year i will be following a programm at school to get a cambridge english certificate.
+                          My goal is being able to bring all my ideas to life with coding. This page is a short journey of skills I have acquired during my time at Grafisch Lyceum Rotterdam.
+                          Enjoy
+                          </p>
 
 
 
-                        <a href="url" class="about-link">Vieuw CV</a>
+                        <a href="#C4" class="about-link">Vieuw CV</a>
 
-                        <a href="#C5" class="about-link"> Say Hi <i class="fa-regular fa-face-grin-stars"></i> </a>
+                        <a href="#C5" class="about-link" style="color: #4565C4;"> Say Hi <i class="fa-regular fa-face-grin-stars"></i> </a>
 
 
 
@@ -222,8 +224,8 @@
 
 
             <p class="marquee">
-                <span>This is text - This is text - This is text - This is text - This is text - This is text - This is text
-                    - This is text - This is text - This is text - This is text - This is text -&nbsp;</span>
+                <span>Teamwork  -  Problem-Solving Skills     -     Attention to Detail        
+                    -         Continuous Learning       -     Adaptability </span>
             </p>
     
     
@@ -234,12 +236,10 @@
 
             <h5 id="C4">Skills</h5>
             <h1>Skills</h1>
-            <p>Th chapter explains ba bhis chapter explains ba blhis chapter explains ba blhis chapter explains ba blhis
-                chapter explains ba <br> blhis chapter explains ba blhis chapter explains ba blhis chapter explains ba
-                blhis chapter explains ba blhis chapter explains ba blhis chapter explains ba blhis chapter explains ba
-                blhis chapter explains ba blhis chapter explains ba blhis chapter explains ba blhis chapter explains ba
-                bllais chapter explains ba bla bla</p>
-
+            <p class="cv"> Feel free to look through my CV as well.</p>
+            <object data="link" type="application/pdf" class="cv">
+                <p><a href="link">Vieuw here.</a></p>
+              </object>
 
 
             <h5 id="C5">Contact</h5>
@@ -255,49 +255,30 @@
             <div class="containerform">
                 <form action="form_verwerk.php" method="post" onsubmit="return validateForm()">
 
-                    <label>Naam:</label><br>
-                    <input type="text" name="name" placeholder="Uw naam.." maxlength="15" required><br>
+                    <label>Name:</label><br>
+                    <input type="text" name="name" placeholder="Your name.." maxlength="15" required><br>
 
                     <label>Telefoonnummer:</label><br>
                     <input type="tel" name="telefoonnummer"
-                        placeholder="Telefoonnummer..  Format: 0612345678 of +31612345678"
+                        placeholder="Telefoonnummer..  Format: 0612345678 or +31612345678"
                         pattern="^(\+31|0)[1-9][0-9]{8}$" required><br>
 
                     <label>Email:</label><br>
                     <input type="text" name="email" id="email" placeholder="Email.." maxlength="30"
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" required><br>
 
-                        <label>Bedrijfsnaam:</label><br>
-                    <input type="text" name="name" placeholder="Bedrijf.." maxlength="15" required><br>
+                        <label>Company name:</label><br>
+                    <input type="text" name="name" placeholder="Company.." maxlength="15" required><br>
 
-                    <label>Opmerking/vraag:</label><br>
-                    <textarea name="message" placeholder="Opmerking/vraag..." style="height:200px" minlength="10"
+                    <label>Remark/Question:</label><br>
+                    <textarea name="message" placeholder="remark/question..." style="height:200px" minlength="10"
                         maxlength="250" required></textarea><br>
 
-                    <input type="submit" value="Send Form">
+                    <input type="submit" value="Send Message">
 
                 </form>
-
-
             </div>
-
-
         </div>
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
 
     </div>
 
@@ -316,7 +297,7 @@
         </div>
 
        <h1>Mariam Chamseddin</h1>
-        <p class="rechten">© Mariam Chamseddin-2023 Alle rechten voorbehouden</p>
+        <p class="rechten">© Mariam Chamseddin-2023 All rights reserved</p>
         <br>
     </footer>
 

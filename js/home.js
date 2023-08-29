@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
           });
 
           // verander kleur
-          this.style.color = "#4287f5"; 
+          this.style.color = "#4565C4"; 
       });
   });
 });
@@ -41,3 +41,6 @@ function validateForm() {
 
     return true;
 }
+
+///////////
+

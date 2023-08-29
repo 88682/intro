@@ -6,19 +6,24 @@ font-family: 'Work Sans', sans-serif;
 
 */
 
+
+
 body {
     margin: 0;
     overflow-x: hidden;
 }
 
 .banner {
-    padding: 45vh;
     text-align: center;
-    background: black;
-    color: white;
     font-size: 25px;
   }
 
+  .banner img {
+    object-fit: contain;
+    width: 100%;
+  /* or
+    object-fit: cover; */
+  } 
 
 .main{
     margin: 5vh 10vw;
@@ -27,21 +32,25 @@ body {
 h1{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
-    padding-top: 3vw;
-    padding-bottom: 2vw;
+    padding-top: 4vw;
+    padding-bottom: 1vw;
+    color: black;
 }
 
 h2{
     padding-top: 2vw;
     text-align: left;
     font-family: 'Noto Sans', sans-serif;
+ 
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
 }
 
-
+.cv{
+  text-align: center;
+}
 
 /*/////// main grid //////////*/
 
@@ -57,9 +66,13 @@ p{
   }
 
   #about-foto {
-    background-color: black;
+    background-color: #5062ae;
     width: 30vw;
     height: 40vh;
+  }
+  #about-foto img{
+    width: 25vw;
+    float: right;
   }
 
 .about-link{
@@ -103,7 +116,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
@@ -122,7 +134,8 @@ ul {
   }
   
   li a:hover {
-    background-color: #3d3d3d;
+    background-color: #2d2d2d;
+    color: #606D94;
   }
   
 
@@ -268,13 +281,14 @@ b{
 .marquee {
   white-space: nowrap;
   animation: marquee 15s linear infinite;
+  margin-left: 5vw;
 
 }
 
 .marquee span {
   display: inline-block;
   animation: marquee-slide 20s linear infinite;
-  margin: auto 5vw;
+margin-left: 10vw;
 }
 
 @keyframes marquee {
@@ -288,7 +302,7 @@ b{
 /*/////////////Contact /////////////////*/
 
 input[type=text],[type=number],[type=email] ,[type=tel] , select, textarea {
-  width: 80%;
+  width: 70%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -301,7 +315,7 @@ input[type=text],[type=number],[type=email] ,[type=tel] , select, textarea {
 
 }
 input[type="tel"] {
-  width: 80%;
+  width: 70%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -315,29 +329,26 @@ input[type="tel"] {
 }
 
 input[type=submit] {
-  background-color: #6194c8;
+  background-color: #000000;
   color: white;
-  padding: 12px 20px;
+  padding: 15px 22px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-  float: right;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 500;
+  cursor: pointer; 
 }
 
 input[type=submit]:hover {
-  background-color: #ebeef6;
-  color:#232f48;
+  background-color: #5062ae;
+  color:white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-    box-shadow: 9px 16px 13px -3px rgba(0,0,0,0.2);
+  box-shadow: 9px 16px 13px -3px rgba(0,0,0,0.2);
 }
 
 .containerform {
   border-radius: 5px;
-  padding: 20px;
-  margin-left: 30%;
+  padding: 30px;
+  margin-left: 25%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
 }
@@ -346,6 +357,7 @@ input:invalid ,textarea:invalid {
   border: none;
   outline: 1px solid #4e5e81;
   font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -353,14 +365,16 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="tel"] {
-  background-color: #ecf1f4;
+  background-color: #f4f6f6;
 }
 
 textarea{
-  background-color: #eff3f6;
+  background-color: #f5f7f8;
 }
 
-
+form{
+  padding: auto vw;
+}
 
 
 /*//////////////////*/
