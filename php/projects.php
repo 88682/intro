@@ -33,38 +33,10 @@
          <li><a href="https://88682.stu.sd-lab.nl/intro/home.php#C3" target="_blank">Projects</a></li>
          <li><a href="https://88682.stu.sd-lab.nl/intro/home.php#C4" target="_blank">Skills</a></li>
             <li><a href="https://88682.stu.sd-lab.nl/intro/home.php#C5" target="_blank">Contact</a></li>
+            <li><a href="projectadmin.php" target="_blank">Admin</a></li>
         </ul>
 
     </header><br><br>
-
-
-\
-
-
-            <h1>Projects Uploader</h1>
-
-            <div class="containerform">
-
-                <form action="projects_verwerk.php" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
-
-                    <label>Title:</label><br>
-                    <input type="text" name="title" placeholder="Title.." maxlength="30" required><br>
-
-                    <label>Date:</label><br>
-                    <input type="date" name="date" placeholder="Made on.." required><br>
-
-                    <label>Upload image:</label><br>
-                    <input type="file" name="image" id="fileToUpload"><br>
-
-                    <label>About this project:</label><br>
-                    <textarea name="about" placeholder="Info about the project..." style="height:200px" minlength="10"
-                     maxlength="500" required></textarea><br>
-
-                    <input type="submit" value="publish Project">
-
-                </form>
-            </div>
-        </div>
 
 
     <div class="typewriter">
@@ -112,8 +84,6 @@ if ($result->num_rows > 0) {
         echo "<p>{$row['date']}</p>";
         echo "<img style='max-width: 60%; border-radius: 5px;  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);' class='project-img' src='../media/{$row['image']}' alt='Project Image' />";
         echo "<p >{$row['about']}</p>";
-        echo "<p><a href='verwijderpagina.php?id={$row['nummer']}' style='padding: 7px 13px; border: none; border-radius: 4px; cursor: pointer; background-color: #141414; color: white; text-decoration: none; margin-top: 2vw'> Delete</a></p>";
-        echo "<p><a href='updatepagina.php?id={$row['nummer']}' style='padding: 7px 13px; border: none; border-radius: 4px; cursor: pointer; background-color: #141414; color: white; text-decoration: none; margin-top: 2vw'> Edit</a></p>";
 
         echo '</div>';
     }

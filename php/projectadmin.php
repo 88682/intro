@@ -33,12 +33,13 @@
          <li><a href="https://88682.stu.sd-lab.nl/intro/home.php#C3" target="_blank">Projects</a></li>
          <li><a href="https://88682.stu.sd-lab.nl/intro/home.php#C4" target="_blank">Skills</a></li>
             <li><a href="https://88682.stu.sd-lab.nl/intro/home.php#C5" target="_blank">Contact</a></li>
+            <li><a href="projectadmin.php" target="_blank">Admin</a></li>
         </ul>
 
     </header><br><br>
 
 
-\
+
 
 
             <h1>Projects Uploader</h1>
@@ -64,21 +65,32 @@
 
                 </form>
             </div>
-        </div>
 
 
-    <div class="typewriter">
+    <h1>Projects Editor</h1>
+
+    <div class="containerform">
+
+        <form action="updatepagina.php.php" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+
+            <label>Title:</label><br>
+            <input type="text" name="title" placeholder="Title.." maxlength="30" required><br>
+
+            <label>Date:</label><br>
+            <input type="date" name="date" placeholder="Made on.." required><br>
+
+            <label>Upload image:</label><br>
+            <input type="file" name="image" id="fileToUpload"><br>
+
+            <label>About this project:</label><br>
+            <textarea name="about" placeholder="Info about the project..." style="height:200px" minlength="10"
+                      maxlength="500" required></textarea><br>
+
+            <input type="submit" value="publish Project">
+
+        </form>
     </div>
-    <h1>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "Some of my work so far...", "My projects:" ]' style="color: #5062ae; text-decoration: none;">
-            <span class="wrap"></span>
-        </a>
-    </h1>
 
-    <div class="container-slide">
-    <span id="wss"></span>
-    <script>wss_elem = document.getElementById("wss"); wssSlide(); </script>
-    </div><br>
 
 
 
@@ -125,6 +137,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 ?>
+
 
     </div>
 
