@@ -21,17 +21,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //// form validatie
 
+// function validateForm() {
+//     var emailInput = document.getElementById("email");
+//     var email = emailInput.value.trim();
+//
+//     // Check voor ".com"
+//     if (!email.endsWith(".com" || ".nl")) {
+//         alert("Email should end with '.com '");
+//         emailInput.focus();
+//         return false;
+//     }
+//
+//
+//     if (!emailInput.checkValidity()) {
+//         alert("Please enter a valid email address");
+//         emailInput.focus();
+//         return false;
+//     }
+//
+//     return true;
+// }
+
+///// thank you message ////
 function validateForm() {
     var emailInput = document.getElementById("email");
     var email = emailInput.value.trim();
 
-    // Check voor ".com"
-    if (!email.endsWith(".com")) {
-        alert("Email should end with '.com'");
+    // Check for either ".com" or ".nl"
+    if (!(email.endsWith(".com") || email.endsWith(".nl"))) {
+        alert("Email should end with '.com' or '.nl'");
         emailInput.focus();
         return false;
     }
-
 
     if (!emailInput.checkValidity()) {
         alert("Please enter a valid email address");
@@ -39,7 +60,10 @@ function validateForm() {
         return false;
     }
 
+    alert("Thank you for your message. I will get back to you soon.");
+
     return true;
+
 }
 
 /////    slide show   //////
@@ -133,3 +157,8 @@ window.onload = function() {
 function myFunction() {
     document.getElementById("myVideo").controls = true;
 }
+
+
+
+///////pop up///////////
+

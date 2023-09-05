@@ -71,7 +71,7 @@
                             </a>
                         </h2>
                         <p>With a huge passion for transforming ideas into reality using a few lines of code.
-                         I have been on an internship at Eneco, I was fascinated with the way they work there, and the company international impact. I like the idea of working at a big international company.
+                          I have been on an internship at Eneco, I was fascinated with the way they work there, and the company international impact. I like the idea of working at a big international company.
                           Wich is why this page is writen in english. This year i will be following a programm at school to get a cambridge english certificate.
                           My goal is being able to bring all my ideas to life with coding. This page is a short journey of skills I have acquired during my time at Grafisch Lyceum Rotterdam.
                           Enjoy
@@ -189,7 +189,7 @@
 
                     <label>Email:</label><br>
                     <input type="text" name="email" id="email" placeholder="Email.." maxlength="30"
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" required><br>
+                           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|nl)$" required><br>
 
                         <label>Company name:</label><br>
                     <input type="text" name="company" placeholder="Company.." maxlength="20"><br>
@@ -201,6 +201,9 @@
                     <input type="submit" value="Send Message">
 
                 </form>
+
+
+
             </div>
         </div>
 
